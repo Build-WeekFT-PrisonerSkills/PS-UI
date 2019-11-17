@@ -1,4 +1,4 @@
-# Second Chance 💯 ✔️ 🏆 (Front End Code Base)
+# Second Chance 💯 ✔️ 🏆 (User Interface Code Base)
 
 ## Table of Contents
 
