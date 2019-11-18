@@ -147,24 +147,29 @@ nav {
   background-color: #005C9E;
 }
 nav .container {
+  width: 95%;
+  margin: 0 auto;
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 nav .container .nav-logo h2 {
   color: white;
+  font-weight: bold;
 }
 nav .nav-links {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 10px;
-  font-size: 1.6rem;
+  padding-bottom: 0px;
+  font-size: 1.8rem;
 }
 nav .nav-links a {
   text-decoration: none;
 }
+nav .nav-links a:visited {
+  color: white;
+}
 nav .nav-links a:hover {
-  color: grey;
+  color: #C0E3F4;
 }
