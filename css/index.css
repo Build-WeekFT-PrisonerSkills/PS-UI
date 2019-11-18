@@ -136,19 +136,24 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3rem;
 }
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 nav {
   max-width: 1080px;
-  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
   background-color: #005C9E;
 }
 nav .container {
   width: 95%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,11 +163,11 @@ nav .container .nav-logo h2 {
   font-weight: bold;
 }
 nav .nav-links {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   padding-bottom: 0px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 nav .nav-links a {
   text-decoration: none;
@@ -172,4 +177,49 @@ nav .nav-links a:visited {
 }
 nav .nav-links a:hover {
   color: #C0E3F4;
+  text-decoration: underline;
+}
+.home .header .header-logo img {
+  width: 100%;
+}
+.home .welcome-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+.home .welcome-container .content {
+  width: 90%;
+  margin: 20px 0;
+}
+.home .welcome-container .content div {
+  text-align: center;
+}
+.home .welcome-container .content .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.home .welcome-container .content .buttons .btn {
+  color: white;
+  background-color: #0085D4;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #0085D4;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home .welcome-container .content .buttons .btn:hover {
+  color: #0085D4;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .home .welcome-container .content .buttons .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+  }
 }

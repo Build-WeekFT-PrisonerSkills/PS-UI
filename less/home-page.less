@@ -1,0 +1,40 @@
+.home {
+    
+    .header {
+
+        .header-logo {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .welcome-container {
+        display: flex;
+        justify-content: center;
+        border: 1px solid red;
+
+        .content {
+            width: 90%;
+            margin: 20px 0;
+            // border: 1px solid red;
+
+            div {
+                text-align: center;
+                // border: 1px solid red;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                // border: 1px solid red;
+    
+                .btn {
+                    .custom-button(white, @blue, 300px, 30px, 5px);
+                  }
+            }
+        }
+    }
+}
