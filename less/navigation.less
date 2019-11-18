@@ -1,0 +1,41 @@
+// Navigation Styles here
+
+nav {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: @@navigation-bg;
+    // border: 1px solid red;
+
+    .container {
+        display: flex;
+        border: 1px solid red;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .nav-logo {
+            
+            h2 {
+                color: @navigation-font-color;
+            }
+        }
+    }
+
+    .nav-links {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        font-size: 1.6rem;
+
+        a {
+            text-decoration: none;
+            // color: @navigation-font-color;
+
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}

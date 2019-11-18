@@ -139,3 +139,32 @@ body {
 h2 {
   font-size: 3rem;
 }
+nav {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #005C9E;
+}
+nav .container {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: baseline;
+}
+nav .container .nav-logo h2 {
+  color: white;
+}
+nav .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+nav .nav-links a {
+  text-decoration: none;
+}
+nav .nav-links a:hover {
+  color: grey;
+}
