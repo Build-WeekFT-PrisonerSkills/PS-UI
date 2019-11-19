@@ -368,3 +368,67 @@ footer p {
     align-items: center;
   }
 }
+.about header .about-header-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.about .about-text {
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+}
+.about .about-text p {
+  line-height: 3rem;
+}
+.about .team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-image: url(../img/rectangle-25.png);
+}
+.about .team-container .individual-members {
+  width: 150px;
+  margin: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .team-container .individual-members .member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.about .team-container .individual-members .member-title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.about .team-container .individual-members a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #C0E3F4;
+  border: 1px solid #005C9E;
+  padding: 7px;
+  border-radius: 5px;
+}
+.about .team-container .individual-members a:visited {
+  color: #005C9E;
+}
+.about .team-container .individual-members a:hover {
+  color: black;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+.about .team-container .individual-members a:active {
+  color: #C0E3F4;
+}
+.about .team-container .individual-members img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #005C9E;
+  border-radius: 50%;
+}

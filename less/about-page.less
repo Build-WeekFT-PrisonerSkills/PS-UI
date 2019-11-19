@@ -1,12 +1,83 @@
 // About Page Styles here
 
 .about {
+  // Here is the code for the header image on the About Us page
   header {
-    .about-header-logo {
+    .about-header-img {
       img {
-        // width: 100%;
-        // height: 500px;
-        // object-fit: cover;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  //   Here is the code for the text under the header image
+  .about-text {
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+
+    p {
+      line-height: 3rem;
+    }
+  }
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-image: url(../img/rectangle-25.png);
+
+    .individual-members {
+      width: 150px;
+      margin: 40px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .member-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .member-title {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+
+      a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        background-color: @lightblue;
+        border: 1px solid @darkblue;
+        padding: 7px;
+        border-radius: 5px;
+
+        &:visited {
+          color: @darkblue;
+        }
+
+        &:hover {
+          color: black;
+          cursor: pointer;
+          background-color: aliceblue;
+        }
+
+        &:active {
+          color: @lightblue;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 2px solid @darkblue;
+        border-radius: 50%;
       }
     }
   }
