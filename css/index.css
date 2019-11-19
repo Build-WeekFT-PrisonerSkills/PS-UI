@@ -138,18 +138,25 @@ body {
 }
 h1 {
   font-size: 4rem;
+  font-weight: bold;
+  font-family: Tahoma;
 }
 h2 {
   font-size: 3rem;
+  font-family: Tahoma;
 }
 .container {
   max-width: 1080px;
   margin: 0 auto;
 }
+p {
+  font-size: 2.2rem;
+  text-align: justify;
+}
 nav {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px 0;
   background-color: #005C9E;
 }
 nav .container {
@@ -179,13 +186,24 @@ nav .nav-links a:hover {
   color: #C0E3F4;
   text-decoration: underline;
 }
+footer {
+  color: white;
+  background: #005C9E;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 1rem;
+}
 .home .header .header-logo img {
   width: 100%;
 }
 .home .welcome-container {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+  margin: 20px 0 40px 0;
 }
 .home .welcome-container .content {
   width: 90%;
@@ -202,11 +220,11 @@ nav .nav-links a:hover {
 .home .welcome-container .content .buttons .btn {
   color: white;
   background-color: #0085D4;
-  width: 300px;
-  height: 30px;
+  width: 400px;
+  height: 40px;
   border: 1px solid #0085D4;
-  border-radius: 5px;
-  font-size: 1.5rem;
+  border-radius: 8px;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,7 +237,59 @@ nav .nav-links a:hover {
 @media (max-width: 500px) {
   .home .welcome-container .content .buttons .btn {
     width: 100%;
-    height: 60px;
+    height: 80px;
     font-size: 2rem;
   }
+}
+.home .welcome-container .content .text {
+  background-color: #C0E3F4;
+  margin-top: 40px;
+  padding: 20px 25px;
+  text-align: justify;
+  line-height: 3rem;
+  border: 2px solid #005C9E;
+  border-radius: 10px;
+}
+.home .mission-container {
+  display: flex;
+  justify-content: center;
+}
+.home .mission-container .mission-img img {
+  width: 100%;
+}
+.home .mission-container .content {
+  text-align: justify;
+}
+.home .mission-container .content .text {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #C0E3F4;
+  border: 2px solid #005C9E;
+  border-radius: 10px;
+}
+.home .mission-container .content .text h2 {
+  font-weight: bold;
+}
+.home .mission-container .content .text p {
+  margin-top: 10px;
+  line-height: 3rem;
+}
+.home .mentioned-container .mentioned div img {
+  width: 50%;
+}
+.home .partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home .partners-container .testimonaial-container {
+  display: flex;
+  justify-content: space-between;
+}
+.home .partners-container .testimonaial-container .testimonial-box {
+  width: 30%;
 }

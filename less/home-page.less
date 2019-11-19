@@ -1,40 +1,110 @@
 .home {
-    
-    .header {
+  .header {
+    .header-logo {
+      img {
+        width: 100%;
+      }
+    }
+  }
 
-        .header-logo {
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+    // border: 1px solid red;
 
-            img {
-                width: 100%;
-            }
+    .content {
+      width: 90%;
+      margin: 20px 0;
+      // border: 1px solid red;
+
+      div {
+        text-align: center;
+        // border: 1px solid red;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        // border: 1px solid red;
+
+        .btn {
+          .custom-button(white, @blue, 400px, 40px, 8px);
         }
+      }
+
+      .text {
+        background-color: @lightblue;
+        margin-top: 40px;
+        padding: 20px 25px;
+        text-align: justify;
+        line-height: 3rem;
+        border: 2px solid @darkblue;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .mission-container {
+    display: flex;
+    justify-content: center;
+
+    .mission-img img {
+      width: 100%;
     }
 
-    .welcome-container {
+    .content {
+      text-align: justify;
+
+      .text {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px 25px;
         display: flex;
         justify-content: center;
-        border: 1px solid red;
+        flex-wrap: wrap;
+        background-color: @lightblue;
+        border: 2px solid @darkblue;
+        border-radius: 10px;
 
-        .content {
-            width: 90%;
-            margin: 20px 0;
-            // border: 1px solid red;
+        h2 {
+          font-weight: bold;
+        }
 
-            div {
-                text-align: center;
-                // border: 1px solid red;
-            }
+        p {
+          margin-top: 10px;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
 
-            .buttons {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-                // border: 1px solid red;
-    
-                .btn {
-                    .custom-button(white, @blue, 300px, 30px, 5px);
-                  }
-            }
+  .mentioned-container {
+    // background-image: url("../img/rectangle-25.png");
+
+    .mentioned {
+      div img {
+        width: 50%;
+      }
+    }
+  }
+
+  .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .partners-title {
+    }
+
+    .testimonaial-container {
+        display: flex;
+        justify-content: space-between;
+
+        .testimonial-box {
+            width: 30%;
         }
     }
+  }
 }
