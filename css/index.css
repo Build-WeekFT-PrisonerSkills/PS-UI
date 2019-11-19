@@ -151,7 +151,6 @@ h2 {
 }
 p {
   font-size: 2.2rem;
-  text-align: justify;
 }
 nav {
   max-width: 1080px;
@@ -199,6 +198,8 @@ footer p {
 }
 .home header .header-logo img {
   width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 .home .welcome-container {
   display: flex;
@@ -273,6 +274,7 @@ footer p {
   font-weight: bold;
 }
 .home .mission-statement .text p {
+  text-align: justify;
   margin-top: 10px;
   line-height: 3rem;
 }
@@ -280,6 +282,7 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
+  padding-bottom: 80px;
   background-image: url(../img/rectangle-25.png);
 }
 .home .mentioned h2 {
@@ -300,15 +303,61 @@ footer p {
 .home .mentioned .company-logos .logo-img {
   display: flex;
   align-items: center;
+  margin: 20px;
 }
 .home .mentioned .company-logos .logo-img img {
   width: 209px;
 }
 .home .testimonials {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .home .testimonials h3 {
   font-size: 4rem;
   font-weight: bold;
+  margin-top: 40px;
+}
+.home .testimonials .testimonial-box {
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .testimonials .testimonial-box .individual-testimonial {
+  width: 30%;
+  background-color: #C0E3F4;
+  padding: 20px;
+  border: 2px solid #005C9E;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .home .testimonials .testimonial-box .individual-testimonial {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.home .testimonials .testimonial-box .individual-testimonial .testimonial-quote {
+  margin: 10px 0 10px;
+  text-align: left;
+  font-style: italic;
+  line-height: 3rem;
+}
+.home .testimonials .testimonial-box .individual-testimonial p {
+  line-height: 3rem;
+}
+.home .testimonials .testimonial-box .individual-testimonial img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #005C9E;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .home .testimonials .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
