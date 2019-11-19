@@ -1,44 +1,50 @@
 // Navigation Styles here
 
 nav {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 15px 0;
-    background-color: @navigation-bg;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  background-color: @navigation-bg;
+  display: flex;
+  justify-content: center;
 
-    .container {
-        width: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  a {
+    text-decoration: none;
 
-        .nav-logo {
-            
-            h2 {
-                color: @navigation-font-color;
-                font-weight: bold;
-            }
-        }
+    &:visited {
+      color: white;
     }
 
-    .nav-links {
-        width: 60%;
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 0px;
-        font-size: 1.6rem;
-
-        a {
-            text-decoration: none;
-
-            &:visited {
-                color:white;
-            }
-
-            &:hover {
-                color:@lightblue;
-                text-decoration: underline;
-            }
-        }
+    &:hover {
+      color: @lightblue;
+      cursor: pointer;
     }
+
+    &:active {
+      color: white;
+    }
+  }
+
+  .navigation {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo {
+      h2 {
+        color: @navigation-font-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .nav-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0px;
+    font-size: 1.6rem;
+
+  }
 }

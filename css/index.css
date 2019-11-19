@@ -136,35 +136,48 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 h1 {
   font-size: 4rem;
   font-weight: bold;
-  font-family: Tahoma;
 }
 h2 {
   font-size: 3rem;
-  font-family: Tahoma;
-}
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
 }
 p {
   font-size: 2.2rem;
 }
 nav {
-  max-width: 1080px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 15px 0;
   background-color: #005C9E;
+  display: flex;
+  justify-content: center;
 }
-nav .container {
+nav a {
+  text-decoration: none;
+}
+nav a:visited {
+  color: white;
+}
+nav a:hover {
+  color: #C0E3F4;
+  cursor: pointer;
+}
+nav a:active {
+  color: white;
+}
+nav .navigation {
   width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .container .nav-logo h2 {
+nav .navigation .nav-logo h2 {
   color: white;
   font-weight: bold;
 }
@@ -174,16 +187,6 @@ nav .nav-links {
   justify-content: space-around;
   padding-bottom: 0px;
   font-size: 1.6rem;
-}
-nav .nav-links a {
-  text-decoration: none;
-}
-nav .nav-links a:visited {
-  color: white;
-}
-nav .nav-links a:hover {
-  color: #C0E3F4;
-  text-decoration: underline;
 }
 footer {
   color: white;
@@ -251,15 +254,19 @@ footer p {
   border: 2px solid #005C9E;
   border-radius: 10px;
 }
-.home .mission-statement {
+.home #mission {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-top: 1px solid #C0E3F4;
 }
-.home .mission-statement .mission-img img {
+.home #mission .mission-img img {
   width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
-.home .mission-statement .text {
+.home #mission .text {
   width: 90%;
   margin: 40px auto;
   padding: 20px 25px;
@@ -270,10 +277,10 @@ footer p {
   border: 2px solid #005C9E;
   border-radius: 10px;
 }
-.home .mission-statement .text h2 {
+.home #mission .text h2 {
   font-weight: bold;
 }
-.home .mission-statement .text p {
+.home #mission .text p {
   text-align: justify;
   margin-top: 10px;
   line-height: 3rem;
