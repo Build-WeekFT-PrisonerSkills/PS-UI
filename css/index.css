@@ -197,70 +197,68 @@ footer {
 footer p {
   font-size: 1rem;
 }
-.home .header .header-logo img {
+.home header .header-logo img {
   width: 100%;
 }
 .home .welcome-container {
   display: flex;
-  justify-content: center;
-  margin: 20px 0 40px 0;
+  flex-direction: column;
+  margin-top: 25px;
 }
-.home .welcome-container .content {
-  width: 90%;
-  margin: 20px 0;
-}
-.home .welcome-container .content div {
+.home .welcome-container div {
   text-align: center;
+  line-height: 5rem;
 }
-.home .welcome-container .content .buttons {
+.home .welcome-container .buttons {
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px auto;
 }
-.home .welcome-container .content .buttons .btn {
+.home .welcome-container .buttons .btn {
   color: white;
   background-color: #0085D4;
-  width: 400px;
+  width: 300px;
   height: 40px;
   border: 1px solid #0085D4;
   border-radius: 8px;
+  font-weight: bold;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.home .welcome-container .content .buttons .btn:hover {
+.home .welcome-container .buttons .btn:hover {
   color: #0085D4;
   background-color: white;
 }
 @media (max-width: 500px) {
-  .home .welcome-container .content .buttons .btn {
+  .home .welcome-container .buttons .btn {
     width: 100%;
     height: 80px;
     font-size: 2rem;
   }
 }
-.home .welcome-container .content .text {
+.home .welcome-container .text {
+  width: 90%;
   background-color: #C0E3F4;
-  margin-top: 40px;
+  margin: 40px auto;
   padding: 20px 25px;
   text-align: justify;
   line-height: 3rem;
   border: 2px solid #005C9E;
   border-radius: 10px;
 }
-.home .mission-container {
+.home .mission-statement {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.home .mission-container .mission-img img {
+.home .mission-statement .mission-img img {
   width: 100%;
 }
-.home .mission-container .content {
-  text-align: justify;
-}
-.home .mission-container .content .text {
+.home .mission-statement .text {
   width: 90%;
   margin: 40px auto;
   padding: 20px 25px;
@@ -271,25 +269,46 @@ footer p {
   border: 2px solid #005C9E;
   border-radius: 10px;
 }
-.home .mission-container .content .text h2 {
+.home .mission-statement .text h2 {
   font-weight: bold;
 }
-.home .mission-container .content .text p {
+.home .mission-statement .text p {
   margin-top: 10px;
   line-height: 3rem;
 }
-.home .mentioned-container .mentioned div img {
-  width: 50%;
-}
-.home .partners-container {
+.home .mentioned {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding-top: 40px;
+  background-image: url(../img/rectangle-25.png);
 }
-.home .partners-container .testimonaial-container {
+.home .mentioned h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 6rem;
+  margin: 50px 0 0 20px;
+}
+.home .mentioned .company-logos {
+  margin: 0 auto;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
-.home .partners-container .testimonaial-container .testimonial-box {
-  width: 30%;
+.home .mentioned .company-logos .logo-img {
+  display: flex;
+  align-items: center;
+}
+.home .mentioned .company-logos .logo-img img {
+  width: 209px;
+}
+.home .testimonials {
+  display: flex;
+  justify-content: center;
+}
+.home .testimonials h3 {
+  font-size: 4rem;
+  font-weight: bold;
 }
