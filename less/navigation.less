@@ -31,10 +31,23 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    @media @phone {
+        flex-direction: column;
+    }
+
     .nav-logo {
+
       h2 {
         color: @navigation-font-color;
         font-weight: bold;
+
+        @media @tablet {
+            font-size: 5rem;
+        }
       }
     }
   }
@@ -46,5 +59,27 @@ nav {
     padding-bottom: 0px;
     font-size: 1.6rem;
 
+    @media @tablet {
+        width: 90%;
+        margin-top: 20px;
+        font-size: 1.7rem;
+    }
+
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+    }
+
   }
+
+
 }

@@ -105,6 +105,10 @@
         justify-content: space-around;
       }
 
+      @media @phone {
+        justify-content: space-around;
+      }
+
       .logo-img {
         display: flex;
         align-items: center;
@@ -112,6 +116,7 @@
 
         img {
           width: 209px;
+
         }
       }
     }
@@ -124,9 +129,11 @@
     align-items: center;
 
     h3 {
+      width: 90%;
       font-size: 4rem;
       font-weight: bold;
       margin-top: 40px;
+      text-align: center;
     }
 
     .testimonial-box {
@@ -145,6 +152,11 @@
 
         @media @tablet {
           width: 90%;
+          margin-bottom: 20px;
+        }
+
+        @media @phone {
+          width: 100%;
           margin-bottom: 20px;
         }
 

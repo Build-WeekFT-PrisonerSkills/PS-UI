@@ -16,14 +16,19 @@
   .about-text {
     width: 70%;
     margin: 30px auto;
-    padding: 20px 40px;
+    padding: 20px 25px;
     text-align: center;
     background-color: @lightblue;
     border: 2px solid @darkblue;
     border-radius: 10px;
 
+    @media @tablet {
+      width: 95%;
+      padding: 10px 20px;
+    }
+
     h1 {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
 
     p {
@@ -40,31 +45,73 @@
     background-image: url(../img/rectangle-25.png);
 
     .individual-members {
-      width: 150px;
+      width: 165px;
       margin: 40px 80px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
+      @media @phone {
+        width: 80%;
+      }
+
+      @media @tablet {
+        width: 205px;
+      }
+
       .member-name {
         font-size: 1.5rem;
         font-weight: bold;
         margin: 5px 0;
+
+        @media @tablet {
+          text-align: center;
+          font-size: 3rem;
+          margin-bottom: 15px;
+        }
+
+        @media @phone {
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 2.5rem;
+        }
       }
 
       .member-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 5px;
+        text-align: center;
+
+        @media @tablet {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 15px;
+        }
+
+        @media @phone {
+          font-size: 2rem;
+          margin-bottom: 15px;
+        }
       }
 
       a {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-decoration: none;
+        text-align: center;
         background-color: @blue;
         border: 1px solid @darkblue;
         padding: 7px;
         border-radius: 5px;
+
+        @media @tablet {
+          text-align: center;
+          font-size: 1.7rem;
+        }
+
+        @media @phone {
+          font-size: 2rem;
+        }
 
         &:visited {
           color: white;
