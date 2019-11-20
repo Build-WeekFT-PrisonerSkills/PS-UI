@@ -20,12 +20,13 @@
   .welcome-container {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-top: 25px;
     border: 1px solid @lightblue;
     border-radius: 5px;
     background-color: aliceblue;
+    box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 
     @media @SD-screen {
       margin: 20px;
@@ -34,10 +35,12 @@
     @media @phone {
       border: none;
       background-color: white;
+      box-shadow: none;
     }
 
     .welcome-statement {
       text-align: center;
+      
     }
 
     h1 {
@@ -53,7 +56,7 @@
     }
   }
 
-  // Here is the code for the text describing Secon Chance
+  // Here is the code for the text describing Second Chance
   .text {
     width: 90%;
     background-color: @lightblue;
@@ -63,6 +66,12 @@
     line-height: 3rem;
     border: 2px solid @darkblue;
     border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+    @media @phone {
+      margin: 0 auto;
+      width: 100%;
+    }
   }
 }
 
@@ -89,6 +98,7 @@
     background-color: @lightblue;
     border: 2px solid @darkblue;
     border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 92, 158, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);
 
     h2 {
       font-weight: bold;
@@ -98,6 +108,10 @@
       text-align: justify;
       margin-top: 10px;
       line-height: 3rem;
+    }
+
+    @media @phone {
+      margin: 20px auto;
     }
   }
 }
@@ -115,6 +129,10 @@
     text-align: center;
     line-height: 6rem;
     margin: 50px 0 0 20px;
+
+    @media @phone {
+      text-align: center;
+    }
   }
 
   // Here is the code for all of the company logos used
@@ -181,8 +199,9 @@
       width: 30%;
       background-color: @lightblue;
       padding: 20px;
-      border: 2px solid @darkblue;
+      border: 2px solid @blue;
       border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 
       @media @tablet {
         width: 90%;
@@ -191,7 +210,7 @@
 
       @media @phone {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
 
       .testimonial-quote {

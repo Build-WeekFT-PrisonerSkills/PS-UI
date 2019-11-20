@@ -190,6 +190,9 @@ a:visited {
   background-color: #C0E3F4;
   box-shadow: 0 0 25px rgba(0, 92, 158, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
+.btn:active {
+  color: aliceblue;
+}
 @media (max-width: 500px) {
   .btn {
     width: 100%;
@@ -218,6 +221,9 @@ a:visited {
     background-color: #C0E3F4;
     box-shadow: 0 0 25px rgba(0, 92, 158, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);
   }
+  .btn:active {
+    color: aliceblue;
+  }
 }
 @media (max-width: 768px) and (max-width: 500px) {
   .btn {
@@ -230,7 +236,6 @@ nav {
   max-width: 100%;
   margin: 0 auto;
   padding: 15px 0;
-  background-color: rgba(0, 92, 158, 0.8);
   display: flex;
   justify-content: center;
   position: fixed;
@@ -238,7 +243,7 @@ nav {
   top: 0;
   /* Position the navbar at the top of the page */
   width: 1080px;
-  background: linear-gradient(90deg, rgba(0, 92, 158, 0.3) 0%, rgba(26, 71, 104, 0.7) 25%, rgba(0, 92, 158, 0.7) 75%, rgba(0, 92, 158, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(0, 92, 158, 0.9) 0%, rgba(26, 71, 104, 0.7) 25%, rgba(0, 92, 158, 0.7) 75%, rgba(0, 92, 158, 0.9) 100%);
   box-shadow: 0 0 25px rgba(0, 92, 158, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 500px) {
@@ -299,7 +304,7 @@ nav .nav-links a:hover {
   text-shadow: none;
 }
 nav .nav-links a:active {
-  color: white;
+  color: aliceblue;
 }
 @media (max-width: 768px) {
   nav .nav-links {
@@ -345,12 +350,13 @@ footer p {
 .home .welcome-container {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding-top: 25px;
   border: 1px solid #C0E3F4;
   border-radius: 5px;
   background-color: aliceblue;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 1080px) {
   .home .welcome-container {
@@ -361,6 +367,7 @@ footer p {
   .home .welcome-container {
     border: none;
     background-color: white;
+    box-shadow: none;
   }
 }
 .home .welcome-container .welcome-statement {
@@ -385,6 +392,13 @@ footer p {
   line-height: 3rem;
   border: 2px solid #005C9E;
   border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 500px) {
+  .home .text {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 #mission {
   display: flex;
@@ -406,6 +420,7 @@ footer p {
   background-color: #C0E3F4;
   border: 2px solid #005C9E;
   border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 #mission .text h2 {
   font-weight: bold;
@@ -414,6 +429,11 @@ footer p {
   text-align: justify;
   margin-top: 10px;
   line-height: 3rem;
+}
+@media (max-width: 500px) {
+  #mission .text {
+    margin: 20px auto;
+  }
 }
 .mentioned {
   display: flex;
@@ -427,6 +447,11 @@ footer p {
   text-align: center;
   line-height: 6rem;
   margin: 50px 0 0 20px;
+}
+@media (max-width: 500px) {
+  .mentioned h2 {
+    text-align: center;
+  }
 }
 .mentioned .company-logos {
   margin: 0 auto;
@@ -486,8 +511,9 @@ footer p {
   width: 30%;
   background-color: #C0E3F4;
   padding: 20px;
-  border: 2px solid #005C9E;
+  border: 2px solid #0085D4;
   border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 768px) {
   .testimonials .testimonial-box .individual-testimonial {
@@ -498,7 +524,7 @@ footer p {
 @media (max-width: 500px) {
   .testimonials .testimonial-box .individual-testimonial {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 .testimonials .testimonial-box .individual-testimonial .testimonial-quote {
@@ -538,6 +564,7 @@ footer p {
   background-color: #C0E3F4;
   border: 2px solid #005C9E;
   border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.4), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 768px) {
   .about .about-text {
@@ -652,4 +679,5 @@ footer p {
   object-fit: cover;
   border: 5px solid #005C9E;
   border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 92, 158, 0.4), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
