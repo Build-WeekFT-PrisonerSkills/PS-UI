@@ -8,6 +8,10 @@
         width: 100%;
         height: 500px;
         object-fit: cover;
+
+        @media @tablet {
+          height: 700px;
+        }
       }
     }
   }
@@ -16,190 +20,205 @@
   .welcome-container {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    border: 1px solid @lightblue;
+    border-radius: 5px;
+    background-color: aliceblue;
 
-    div {
+    @media @SD-screen {
+      margin: 20px;
+    }
+
+    @media @phone {
+      border: none;
+      background-color: white;
+    }
+
+    .welcome-statement {
       text-align: center;
-      line-height: 5rem;
+    }
+
+    h1 {
+      text-decoration-color: @darkblue;
     }
 
     .buttons {
       width: 80%;
       display: flex;
       justify-content: space-between;
-      margin: 20px auto;
-    }
-
-    // Here is the code for the text describing Secon Chance
-    .text {
-      width: 90%;
-      background-color: @lightblue;
-      margin: 40px auto;
-      padding: 20px 25px;
-      text-align: justify;
-      line-height: 3rem;
-      border: 2px solid @darkblue;
-      border-radius: 10px;
+      margin: 40px auto 20px;
     }
   }
 
-  // Here is the code for the section containing the mission statement
-  #mission {
-    padding-top: 40px;
+  // Here is the code for the text describing Secon Chance
+  .text {
+    width: 90%;
+    background-color: @lightblue;
+    margin: 40px auto;
+    padding: 20px 25px;
+    text-align: justify;
+    line-height: 3rem;
+    border: 2px solid @darkblue;
+    border-radius: 10px;
+  }
+}
+
+// Here is the code for the section containing the mission statement
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .mission-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  // Here is the code for the text inside the mission statement box
+  .text {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px 25px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-top: 1px solid @lightblue;
-
-    .mission-img img {
-      width: 100%;
-      height: 600px;
-      object-fit: cover;
-    }
-
-    // Here is the code for the text inside the mission statement box
-    .text {
-      width: 90%;
-      margin: 40px auto;
-      padding: 20px 25px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: @lightblue;
-      border: 2px solid @darkblue;
-      border-radius: 10px;
-
-      h2 {
-        font-weight: bold;
-      }
-
-      p {
-        text-align: justify;
-        margin-top: 10px;
-        line-height: 3rem;
-      }
-    }
-  }
-
-  // Here is the code for the section containing publications which have covered Second Chance
-  .mentioned {
-    display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    background-image: url(../img/rectangle-25.png);
+    background-color: @lightblue;
+    border: 2px solid @darkblue;
+    border-radius: 10px;
 
     h2 {
-      font-size: 4rem;
       font-weight: bold;
-      text-align: center;
-      line-height: 6rem;
-      margin: 50px 0 0 20px;
     }
 
-    // Here is the code for all of the company logos used
-    .company-logos {
-      margin: 0 auto;
-      width: 90%;
+    p {
+      text-align: justify;
+      margin-top: 10px;
+      line-height: 3rem;
+    }
+  }
+}
+
+// Here is the code for the section containing publications which have covered Second Chance
+.mentioned {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-image: url(../img/rectangle-25.png);
+
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    line-height: 6rem;
+    margin: 50px 0 0 20px;
+  }
+
+  // Here is the code for all of the company logos used
+  .company-logos {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    @media @tablet {
+      justify-content: space-around;
+    }
+
+    @media @phone {
+      justify-content: space-around;
+    }
+
+    .logo-img {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
+      align-items: center;
+      margin: 20px;
+
+      img {
+        width: 209px;
+      }
+    }
+  }
+}
+
+// Here is the code for the testimonial section at the bottom
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-top: 1px solid @lightblue;
+  border-bottom: 1px solid @lightblue;
+
+  h3 {
+    width: 90%;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  // This code contains the series of individual testimonials
+  .testimonial-box {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // Here is the styling for each testimonial
+    .individual-testimonial {
+      width: 30%;
+      background-color: @lightblue;
+      padding: 20px;
+      border: 2px solid @darkblue;
+      border-radius: 20px;
 
       @media @tablet {
-        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 20px;
       }
 
       @media @phone {
-        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
       }
 
-      .logo-img {
-        display: flex;
-        align-items: center;
-        margin: 20px;
-
-        img {
-          width: 209px;
-
-        }
+      .testimonial-quote {
+        margin: 10px 0 10px;
+        text-align: left;
+        font-style: italic;
+        line-height: 3rem;
       }
-    }
-  }
 
-  // Here is the code for the testimonial section at the bottom
-  .testimonials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      p {
+        line-height: 3rem;
+      }
 
-    h3 {
-      width: 90%;
-      font-size: 4rem;
-      font-weight: bold;
-      margin-top: 40px;
-      text-align: center;
-    }
+      .test-author {
+        font-weight: bold;
+      }
 
-    // This code contains the series of individual testimonials
-    .testimonial-box {
-      width: 90%;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-
-      // Here is the styling for each testimonial
-      .individual-testimonial {
-        width: 30%;
-        background-color: @lightblue;
-        padding: 20px;
+      // Here is the code for the images in the testimonial boxes
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
         border: 2px solid @darkblue;
-        border-radius: 20px;
+        border-radius: 10px;
 
         @media @tablet {
-          width: 90%;
-          margin-bottom: 20px;
+          height: 550px;
         }
-
-        @media @phone {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .testimonial-quote {
-          margin: 10px 0 10px;
-          text-align: left;
-          font-style: italic;
-          line-height: 3rem;
-        }
-
-        p {
-          line-height: 3rem;
-        }
-
-        .test-author {
-          font-weight: bold;
-        }
-
-        img {
-          width: 100%;
-          height: 250px;
-          object-fit: cover;
-          border: 2px solid @darkblue;
-          border-radius: 10px;
-
-          @media @tablet {
-            height: 450px;
-          }
-        }
-      }
-
-      @media @tablet {
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
       }
     }
   }

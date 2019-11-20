@@ -24,7 +24,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 4rem;
 }
 
 p {
@@ -33,8 +37,13 @@ p {
 
 a {
   text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
 }
 
+// Here is the code for the buttons throughout the site
 .buttons {
   width: 80%;
   display: flex;
@@ -44,14 +53,14 @@ a {
   @media @tablet {
     flex-direction: column;
     align-items: center;
-}
+  }
 }
 
 .btn {
-  .custom-button(white, @blue, 300px, 40px, 8px);
+  .custom-button(white, @blue, @darkblue, 300px, 40px, 8px);
 
   @media @tablet {
     margin: 20px 0;
-    .custom-button(white, @blue, 400px, 60px, 8px);
+    .custom-button(white, @blue, @darkblue, 400px, 60px, 8px);
   }
 }

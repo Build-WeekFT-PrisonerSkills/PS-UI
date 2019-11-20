@@ -4,25 +4,17 @@ nav {
   max-width: 100%;
   margin: 0 auto;
   padding: 15px 0;
-  background-color: @navigation-bg;
+  background-color: rgba(0, 92, 158, 0.8);
   display: flex;
   justify-content: center;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 1080px;
 
-  a {
-    text-decoration: none;
-
-    &:visited {
-      color: white;
-    }
-
-    &:hover {
-      color: @lightblue;
-      cursor: pointer;
-    }
-
-    &:active {
-      color: white;
-    }
+  @media @phone {
+    position: relative; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    background-color: rgba(0, 92, 158, 1);
   }
 
   .navigation {
@@ -32,21 +24,20 @@ nav {
     align-items: center;
 
     @media @tablet {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     @media @phone {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .nav-logo {
-
       h2 {
         color: @navigation-font-color;
         font-weight: bold;
 
         @media @tablet {
-            font-size: 5rem;
+          font-size: 5rem;
         }
       }
     }
@@ -59,27 +50,45 @@ nav {
     padding-bottom: 0px;
     font-size: 1.6rem;
 
+    a {
+      text-decoration: none;
+      padding: 5px;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover {
+        background-color: @lightblue;
+        // border: 2px solid @darkblue;
+        border-radius: 5px;
+        color: @darkblue;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: white;
+      }
+    }
+
     @media @tablet {
-        width: 90%;
-        margin-top: 20px;
-        font-size: 1.7rem;
+      width: 90%;
+      margin-top: 20px;
+      font-size: 1.7rem;
     }
 
     @media @phone {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
 
-        h2 {
-            margin-bottom: 10px;
-        }
+      h2 {
+        margin-bottom: 10px;
+      }
 
-        a {
-            font-size: 3rem;
-            margin: 10px 0;
-        }
+      a {
+        font-size: 3rem;
+        margin: 10px 0;
+      }
     }
-
   }
-
-
 }

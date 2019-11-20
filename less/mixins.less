@@ -1,6 +1,6 @@
 // Mixins in here
 
-.custom-button(@color, @bg-color, @width, @height, @radius) {
+.custom-button(@color, @bg-color, @hover-color, @width, @height, @radius) {
     color: @color;
     background-color: @bg-color;
     width: @width;
@@ -16,7 +16,7 @@
     cursor: pointer;
 
     &:hover {
-        color: @bg-color;
+        color: @hover-color;
         background-color: @lightblue;
     }
 
