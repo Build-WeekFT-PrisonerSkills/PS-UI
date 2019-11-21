@@ -137,6 +137,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
+  margin: 0 auto;
+}
+.container {
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -233,7 +236,7 @@ a:visited {
   }
 }
 nav {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 15px 0;
   display: flex;
@@ -242,8 +245,7 @@ nav {
   /* Set the navbar to fixed position */
   top: 0;
   /* Position the navbar at the top of the page */
-  width: 1080px;
-  background: linear-gradient(90deg, rgba(192, 227, 244, 0.4) 0%, rgba(192, 227, 244, 0.9) 25%, rgba(192, 227, 244, 0.9) 75%, rgba(192, 227, 244, 0.4) 100%);
+  background: linear-gradient(90deg, rgba(192, 227, 244, 0.1) 0%, rgba(192, 227, 244, 0.9) 25%, rgba(192, 227, 244, 0.9) 75%, rgba(192, 227, 244, 0.1) 100%);
   box-shadow: 0 0 25px rgba(0, 92, 158, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 500px) {
@@ -256,9 +258,9 @@ nav {
   }
 }
 nav .navigation {
-  width: 95%;
+  width: 1080px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 768px) {
@@ -327,6 +329,7 @@ nav .nav-links a:active {
   }
 }
 footer {
+  width: 100%;
   color: white;
   background: #005C9E;
   padding: 20px 0;
@@ -339,7 +342,7 @@ footer p {
 }
 .home header .header-img img {
   width: 100%;
-  height: 500px;
+  height: 700px;
   object-fit: cover;
 }
 @media (max-width: 768px) {
@@ -356,7 +359,6 @@ footer p {
   border: 1px solid #C0E3F4;
   border-radius: 5px;
   background-color: aliceblue;
-  box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 1080px) {
   .home .welcome-container {
@@ -391,7 +393,7 @@ footer p {
   text-align: justify;
   line-height: 3rem;
   border: 2px solid #005C9E;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 500px) {
@@ -404,10 +406,12 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: aliceblue;
+  border-bottom: 1px solid #C0E3F4;
 }
 #mission .mission-img img {
   width: 100%;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
 }
 #mission .text {
@@ -438,15 +442,19 @@ footer p {
 .mentioned {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 120px;
   background-image: url(../img/rectangle-25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .mentioned h2 {
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   line-height: 6rem;
-  margin: 50px 0 0 20px;
+  margin: 50px 0 0 50px;
 }
 @media (max-width: 500px) {
   .mentioned h2 {
@@ -541,7 +549,7 @@ footer p {
 }
 .testimonials .testimonial-box .individual-testimonial img {
   width: 100%;
-  height: 250px;
+  height: 450px;
   object-fit: cover;
   border: 2px solid #005C9E;
   border-radius: 10px;
