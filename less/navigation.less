@@ -29,10 +29,6 @@ nav {
       flex-direction: column;
     }
 
-    @media @phone {
-      flex-direction: column;
-    }
-
     .nav-logo {
       h2 {
         color: @black;
@@ -40,6 +36,10 @@ nav {
 
         @media @tablet {
           font-size: 4rem;
+        }
+
+        @media @phone {
+          display: none;
         }
       }
     }
@@ -84,11 +84,12 @@ nav {
     @media @phone {
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 10px;
+      justify-content: space-evenly;
+      margin: 0;
 
       a {
-        font-size: 2.5rem;
-        margin: 5px 0;
+        font-size: 2.3rem;
+        margin: 5px 5px;
       }
     }
   }
