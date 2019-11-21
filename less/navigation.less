@@ -14,9 +14,9 @@ nav {
   box-shadow: 0 0 25px rgba(0, 92, 158, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 
   @media @phone {
-    position: relative; /* Set the navbar to fixed position */
+    position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    background-color: rgba(0, 92, 158, 1);
+    background: linear-gradient(90deg, rgba(192, 227, 244, 0.5) 0%, rgba(192, 227, 244, 0.9) 25%, rgba(192, 227, 244, 0.9) 75%, rgba(192, 227, 244, 0.5) 100%);
   }
 
   .navigation {
@@ -39,7 +39,7 @@ nav {
         font-weight: bold;
 
         @media @tablet {
-          font-size: 5rem;
+          font-size: 4rem;
         }
       }
     }
@@ -82,16 +82,13 @@ nav {
     }
 
     @media @phone {
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
-
-      h2 {
-        margin-bottom: 10px;
-      }
+      margin-top: 10px;
 
       a {
-        font-size: 3rem;
-        margin: 10px 0;
+        font-size: 2.5rem;
+        margin: 5px 0;
       }
     }
   }
