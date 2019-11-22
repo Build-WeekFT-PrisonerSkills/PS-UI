@@ -53,3 +53,32 @@
                 margin:4%;
             }
         }
+
+
+        @media(max-width: 500px) {
+            .partners-container{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .partners1, .partners2, .partners3 {
+                    width: 70%;
+                    border: 1px solid @main-color;
+                    margin:auto;
+                    border-radius: 25px;
+                    text-align: center;
+                    margin:1.5%;
+        
+                    p{
+                        width: 60%;
+                        margin: auto;
+                    }
+                    .partnerpic {
+                        width:40%;
+                        height:auto;
+                        border-radius: 50%;
+                        margin:4%;
+                    }
+            }}
+        }
