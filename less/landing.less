@@ -2,7 +2,7 @@
 
 #slider {
     overflow: hidden;
-   
+    margin-top:-10rem; 
  }
  
  #slider figure {
@@ -103,28 +103,106 @@
        }
     }
  
-    // hr {
-    //    border: 1px solid @main-color;
-    // }
+
+
+// .item-1, 
+// .item-2, 
+// .item-3 {
+// 	position: absolute;
+//   display: block;
+// 	top: 2em;
+  
+//   width: 60%;
+  
+//   font-size: 2em;
+
+.testimonials1, .testimonials2, .testimonials3, .testimonials4 {
+   width: 100%;
+   font-size: .5em;
+   background: lightslategray;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+	
+
+.testimonials1{
+  animation-name: anim-1;
+  padding:8%;
+}
+
+.testimonials2{
+   animation-name: anim-2;
+   padding:8%;
+}
+
+.testimonials3{
+   animation-name: anim-3;
+   padding:8%;
+}
+
+.testimonials4 {
+   animation-name: anim-4;
+   padding:8%;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,18% { left: 25%; opacity: 1; }
+  26.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 26.33% { left: -100%; opacity: 0; }
+  34.66%, 43.9% { left: 25%; opacity: 1; }
+  52.2%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 52.2% { left: -100%; opacity: 0; }
+  60.53%, 70.2% { left: 25%; opacity: 1; }
+  78.53%, 100% { left: 110%; opacity: 0; }
+}
  
+@keyframes anim-4 {
+	0%, 78.53% { left: -100%; opacity: 0; }
+  86.86%, 95.16% { left: 25%; opacity: 1; }
+  99%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-1 {
+	0%, 99.1% { left: -100%; opacity: 0; }
+  99.5%, 99.8% { left: 25%; opacity: 1; }
+ 100% { left: 110%; opacity: 0; }
+}
   .testimonials {
      padding: 3%;
      width:100%;
      text-align: center;
+     height:20rem;
+  
  
      .ts {
-        display:flex;
-        width:100%;
+        width:00%;
+        display: flex;
+        overflow: hidden;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+     }
+   }
         
-        .testimonials1 {
-          width: 100%;
-          padding: 3%;
-          justify-content: space-between ;
-         }
-       }
-    }
+//         .testimonials1 {
+//           width: 100%;
+//           padding: 3%;
+//           justify-content: space-between ;
+//          }
+//        }
+//     }
   
-  .buttons {
+
+
+    .buttons {
     
     display: flex;
     justify-content: space-around;
@@ -149,10 +227,14 @@
 
  .midimg{
      width:100%;
- }
+}
+
+
+
+
+
 
 //  Responsive CSS
-
 @media(max-width: 500px) {
     .purpose {
       width: 100%;

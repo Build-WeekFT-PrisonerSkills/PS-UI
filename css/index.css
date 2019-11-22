@@ -145,11 +145,12 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
-  line-height: 48px;
+  line-height: 4.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-weight: bold;
 }
 h2 {
   font-family: 'Lato', sans-serif;
@@ -181,16 +182,15 @@ nav {
   align-items: center;
   align-content: center;
   position: relative;
-  background: hsl(202, 100%, 42%);
-  opacity: 0.5;
+  background: rgba(0, 133, 212, 0.5);
+  height: 8rem;
+  z-index: 1;
 }
 nav .name {
   width: 30%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
   margin-left: 1%;
+  color: #ffffff;
 }
 nav .links {
   width: 90%;
@@ -201,7 +201,7 @@ nav .links a {
   margin: 3%;
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
-  line-height: 31px;
+  line-height: 3.1rem;
   text-decoration: none;
   color: #ffffff;
 }
@@ -228,7 +228,7 @@ footer {
   width: 100%;
   height: 100px;
   left: 3px;
-  background: hsl(202, 100%, 42%);
+  background: #0085d4;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -236,6 +236,7 @@ footer {
 }
 #slider {
   overflow: hidden;
+  margin-top: -10rem;
 }
 #slider figure {
   position: relative;
@@ -315,30 +316,141 @@ footer {
 .purpose .first {
   padding: 1%;
   width: 80%;
-  border: 1px solid hsl(202, 100%, 42%);
+  border: 1px solid #0085d4;
   border-radius: 8px;
   margin: 3%;
 }
 .purpose .second {
   padding: 1%;
   width: 80%;
-  border: 1px solid hsl(202, 100%, 42%);
+  border: 1px solid #0085d4;
   border-radius: 8px;
   margin: 3%;
+}
+.testimonials1,
+.testimonials2,
+.testimonials3,
+.testimonials4 {
+  width: 100%;
+  font-size: 0.5em;
+  background: lightslategray;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.testimonials1 {
+  animation-name: anim-1;
+  padding: 8%;
+}
+.testimonials2 {
+  animation-name: anim-2;
+  padding: 8%;
+}
+.testimonials3 {
+  animation-name: anim-3;
+  padding: 8%;
+}
+.testimonials4 {
+  animation-name: anim-4;
+  padding: 8%;
+}
+@keyframes anim-1 {
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
+  }
+  8.3%,
+  18% {
+    left: 25%;
+    opacity: 1;
+  }
+  26.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+@keyframes anim-2 {
+  0%,
+  26.33% {
+    left: -100%;
+    opacity: 0;
+  }
+  34.66%,
+  43.9% {
+    left: 25%;
+    opacity: 1;
+  }
+  52.2%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+@keyframes anim-3 {
+  0%,
+  52.2% {
+    left: -100%;
+    opacity: 0;
+  }
+  60.53%,
+  70.2% {
+    left: 25%;
+    opacity: 1;
+  }
+  78.53%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+@keyframes anim-4 {
+  0%,
+  78.53% {
+    left: -100%;
+    opacity: 0;
+  }
+  86.86%,
+  95.16% {
+    left: 25%;
+    opacity: 1;
+  }
+  99%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+@keyframes anim-1 {
+  0%,
+  99.1% {
+    left: -100%;
+    opacity: 0;
+  }
+  99.5%,
+  99.8% {
+    left: 25%;
+    opacity: 1;
+  }
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
 }
 .testimonials {
   padding: 3%;
   width: 100%;
   text-align: center;
+  height: 20rem;
 }
 .testimonials .ts {
+  width: 00%;
   display: flex;
-  width: 100%;
-}
-.testimonials .ts .testimonials1 {
-  width: 100%;
-  padding: 3%;
-  justify-content: space-between;
+  overflow: hidden;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .buttons {
   display: flex;
@@ -382,6 +494,7 @@ footer {
 }
 .aboutheader {
   width: 100%;
+  margin-top: -10rem;
 }
 .aboutheader img {
   width: 100%;
@@ -396,15 +509,15 @@ footer {
   padding: 3%;
   width: 100%;
   text-align: center;
+  height: 20rem;
 }
 .top .ts {
+  width: 00%;
   display: flex;
-  width: 100%;
-}
-.top .ts .testimonials1 {
-  width: 100%;
-  padding: 3%;
-  justify-content: space-between;
+  overflow: hidden;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .biopix {
   margin: 5%;
@@ -426,7 +539,7 @@ footer {
 .row3 .profile {
   margin: 5%;
   padding: 2%;
-  border: 1px solid hsl(202, 100%, 42%);
+  border: 1px solid #0085d4;
   border-radius: 25px;
   text-align: center;
 }
@@ -461,10 +574,10 @@ footer {
 }
 .mentioned .asmentioned {
   margin: 5%;
-  text-align: left;
 }
 .missionheader {
   width: 100%;
+  margin-top: -10rem;
 }
 .missionheader img {
   width: 100%;
@@ -476,7 +589,7 @@ footer {
 }
 .partners .partners1 {
   width: 25%;
-  border: 1px solid hsl(202, 100%, 42%);
+  border: 1px solid #0085d4;
   margin: auto;
   border-radius: 25px;
   text-align: center;
