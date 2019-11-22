@@ -159,7 +159,7 @@ h3 {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 12px;
+    font-size: 2rem;
     margin: 0;
   }
   h2 {
@@ -220,6 +220,7 @@ footer {
   width: 100%;
   height: 100px;
   left: 3px;
+  margin-top: 3%;
   background: #0085d4;
   justify-content: center;
   align-items: center;
@@ -918,10 +919,52 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
+  height: 25rem;
+  width: 100%;
+  justify-content: space-between;
 }
 .mentioned .asmentioned {
-  margin: 5%;
+  margin: 3%;
+  text-align: center;
+  width: 20%;
+}
+.mentioned .mentionedimgs {
+  display: flex;
+  height: 100%;
+  width: 70%;
+}
+.mentioned .mentionedimgs .left1 {
+  align-self: center;
+  padding-bottom: 5%;
+  margin-left: -10%;
+  margin-right: 15%;
+}
+.mentioned .mentionedimgs .middle1 {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.mentioned .mentionedimgs .middle1 .row1a {
+  padding-bottom: 2%;
+  padding-right: 5%;
+}
+.mentioned .mentionedimgs .middle1 .row1b {
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+.mentioned .mentionedimgs .middle1 .row1c {
+  margin-left: 5%;
+}
+.mentioned .mentionedimgs .right1 {
+  align-self: flex-end;
+  margin-left: 10%;
+  justify-content: space-between;
+}
+.mentioned .mentionedimgs .right1 .row2 {
+  padding-top: 9%;
+  padding-bottom: 9%;
 }
 .missionheader {
   width: 100%;
@@ -933,7 +976,8 @@ footer {
 }
 .top {
   margin: auto;
-  width: 50%;
+  width: 60%;
+  text-align: center;
 }
 .top h2 {
   font-family: 'Montserrat', sans-serif;
@@ -993,5 +1037,87 @@ footer {
     height: auto;
     border-radius: 50%;
     margin: 4%;
+  }
+  .mentioned {
+    display: flex;
+    flex-direction: column;
+    height: 70rem;
+    width: 100%;
+  }
+  .mentioned .asmentioned {
+    margin: auto;
+    width: 100%;
+  }
+  .mentioned .mentionedimgs {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mentioned .mentionedimgs .left1,
+  .mentioned .mentionedimgs .middle1,
+  .mentioned .mentionedimgs .right1 {
+    margin: auto;
+    padding: 3%;
+    width: 70%;
+    align-content: center;
+    text-align: center;
+  }
+  .top {
+    width: 80%;
+    margin: auto;
+  }
+}
+.contactheader {
+  margin-top: -10rem;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.contactheader img {
+  width: 100%;
+}
+.contact-form {
+  background: #F1F1F1;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+.contact-form .form-control {
+  width: 90%;
+  margin: 3%;
+  background: white;
+  border-radius: 10px;
+  outline: none;
+  color: #0085d4;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.contact-form .form-control .submit {
+  background-color: #0085d4;
+}
+input {
+  height: 4.5rem;
+}
+#form {
+  width: 100%;
+  height: 30rem;
+}
+button {
+  margin: -2.8%;
+  background: #0085D4;
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  width: 30%;
+  height: 3rem;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .contact-form {
+    width: 90%;
+  }
+  button {
+    margin: -1.8%;
+    font-size: 1rem;
+    width: 50%;
   }
 }

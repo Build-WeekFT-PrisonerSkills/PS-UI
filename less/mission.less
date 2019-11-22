@@ -1,15 +1,56 @@
 // regular CSS
 .mentioned{ 
-    margin:5%;
-    background-image: url('/../../../pix/Rectangle-25.png');
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position: center;
+   .content();
     display:flex;
+    height:25rem;
+    width:100%;
+    justify-content: space-between;
 
     .asmentioned{
-        margin: 5%;
-        
+        margin: 3%;
+        text-align: center; 
+        width:20%;
+    }
+    .mentionedimgs{
+       display: flex;
+       height:100%;
+       width:70%;
+
+       .left1{
+        align-self: center;
+        padding-bottom:5%;
+        margin-left: -10%;
+        margin-right: 15%;
+       }
+    .middle1{
+        display:flex;
+        align-self: flex-start;
+        flex-direction: column;
+     
+    
+       
+       .row1a {
+        padding-bottom:2%; 
+        padding-right:5%;
+       }
+       .row1b  {
+        padding-bottom:7%; 
+        padding-top: 7%;
+        }
+        .row1c {
+        margin-left:5%; 
+        }
+    }
+    .right1{
+        align-self: flex-end;
+        margin-left: 10%;
+        justify-content: space-between;
+       .row2{
+        padding-top:9%;
+        padding-bottom:9%;
+          
+       }
+    }
     }
 }
 .missionheader{
@@ -22,16 +63,16 @@
 }
 .top{
     margin:auto;
-    width:50%;
+    width:60%;
+    text-align: center;
     h2{
-        font-family: @accent-font2;
+    font-family: @accent-font2;
     }
    p {
        font-family: @main-font;
     }
 }
-// .partners {
-//    width:100%;
+
     .partners-container{ 
         display:flex;
         
@@ -70,7 +111,7 @@
                     text-align: center;
                     margin:1.5%;
         
-                    p{
+                    p {
                         width: 60%;
                         margin: auto;
                     }
@@ -80,5 +121,33 @@
                         border-radius: 50%;
                         margin:4%;
                     }
-            }}
+                }
+            }
+
+            .mentioned{
+                display: flex;
+                flex-direction: column;
+                height:70rem;
+                width:100%;
+                .asmentioned{
+                    margin: auto; 
+                    width: 100%;
+                }
+                .mentionedimgs{
+                    width:100%;
+                    flex-direction: column;
+                    .left1, .middle1, .right1{
+                        margin:auto;
+                        padding:3%;
+                        width:70%;
+                        align-content: center;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .top{
+                width:80%;
+                margin:auto; 
+            }
         }
