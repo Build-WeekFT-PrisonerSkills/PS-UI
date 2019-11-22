@@ -1,0 +1,71 @@
+// Global styling here
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  // max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+}
+
+// Here is the code for the buttons throughout the site
+.buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn {
+  .custom-button(white, @blue, @darkblue, 300px, 40px, 8px);
+
+  @media @tablet {
+    margin: 20px 0;
+    .custom-button(white, @blue, @darkblue, 400px, 60px, 8px);
+  }
+}

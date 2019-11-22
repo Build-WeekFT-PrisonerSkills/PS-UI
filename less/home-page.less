@@ -1,0 +1,250 @@
+// Home Page styles here
+
+.home {
+  header {
+    // Here the code for the header image
+    .header-img {
+      img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+
+        @media @tablet {
+          height: 700px;
+        }
+      }
+    }
+  }
+
+  // Here is the code for the section containing Welcome to Second Chance, Employers/Prisons buttons, and the brief description of the app
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    border: 1px solid @lightblue;
+    border-radius: 5px;
+    background-color: aliceblue;
+
+    @media @SD-screen {
+      margin: 20px;
+    }
+
+    @media @phone {
+      border: none;
+      background-color: white;
+      box-shadow: none;
+    }
+
+    .welcome-statement {
+      text-align: center;
+      
+    }
+
+    h1 {
+      color: @darkblue;
+      margin-top: 5px;
+    }
+
+    .buttons {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      margin: 40px auto 20px;
+    }
+  }
+
+  // Here is the code for the text describing Second Chance
+  .text {
+    width: 90%;
+    background-color: @lightblue;
+    margin: 40px auto;
+    padding: 20px 25px;
+    text-align: justify;
+    line-height: 3rem;
+    border: 2px solid @darkblue;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+    @media @phone {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+// Here is the code for the section containing the mission statement
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: aliceblue;
+  border-bottom: 1px solid @lightblue;
+
+  .mission-img img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  // Here is the code for the text inside the mission statement box
+  .text {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: @lightblue;
+    border: 2px solid @darkblue;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 92, 158, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+    h2 {
+      font-weight: bold;
+    }
+
+    p {
+      text-align: justify;
+      margin-top: 10px;
+      line-height: 3rem;
+    }
+
+    @media @phone {
+      margin: 20px auto;
+    }
+  }
+}
+
+// Here is the code for the section containing publications which have covered Second Chance
+.mentioned {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-image: url(../img/rectangle-25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h2 {
+    font-weight: bold;
+    text-align: left;
+    line-height: 6rem;
+    margin: 50px 0 0 50px;
+
+    @media @phone {
+      text-align: center;
+    }
+  }
+
+  // Here is the code for all of the company logos used
+  .company-logos {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    @media @tablet {
+      justify-content: space-around;
+    }
+
+    @media @phone {
+      justify-content: space-around;
+    }
+
+    .logo-img {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+
+      img {
+        width: 209px;
+      }
+    }
+  }
+}
+
+// Here is the code for the testimonial section at the bottom
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-top: 1px solid @lightblue;
+  border-bottom: 1px solid @lightblue;
+
+  h3 {
+    width: 90%;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  // This code contains the series of individual testimonials
+  .testimonial-box {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // Here is the styling for each testimonial
+    .individual-testimonial {
+      width: 30%;
+      background-color: @lightblue;
+      padding: 20px;
+      border: 2px solid @blue;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 92, 158, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+      @media @tablet {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      @media @phone {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .testimonial-quote {
+        margin: 10px 0 10px;
+        text-align: left;
+        font-style: italic;
+        line-height: 3rem;
+      }
+
+      p {
+        line-height: 3rem;
+      }
+
+      .test-author {
+        font-weight: bold;
+      }
+
+      // Here is the code for the images in the testimonial boxes
+      img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border: 2px solid @darkblue;
+        border-radius: 10px;
+
+        @media @tablet {
+          height: 550px;
+        }
+      }
+    }
+  }
+}
