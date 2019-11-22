@@ -26,7 +26,7 @@ Own a business? Want to do good in the world? Look no further! "Second Chance" i
 Justin Trombley https://github.com/JustinTrombley96 <br>
 
 ### User Interface
-Maggie Price https://github.com/maggieprice <br>
+Maggie Price https://github.com/maggieprice |https://second-chance-maggieprice.netlify.com<br>
 Rick Ahlgren https://github.com/thericktastic <br>
 
 ### Frontend

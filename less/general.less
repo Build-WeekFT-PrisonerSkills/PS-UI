@@ -1,7 +1,7 @@
 
 
 h1{
-      margin:3%;
+    
       display:flex;
       font-family: @main-font;
       font-style: normal;
@@ -9,8 +9,9 @@ h1{
       font-size: 3rem;
       line-height: 48px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      
+      width:100%; 
 }
 
 h2{
@@ -19,7 +20,6 @@ h2{
       font-weight: normal;
       font-size: 2rem;
       text-align: center;
-   
 }
 
 h3{
@@ -27,4 +27,17 @@ h3{
       font-style: normal;
       font-weight: normal;
       font-size: 1.3rem;
+}
+
+
+// Responsive CSS
+
+@media(max-width: 500px) {
+     h1 {width: 100%;
+      font-size: 1.8rem;
+      margin:0;}
+
+      h2 {
+            font-size: 1.6rem;
+      }
 }
