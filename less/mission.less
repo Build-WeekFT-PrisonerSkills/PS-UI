@@ -20,26 +20,36 @@
       height:auto;
   }
 }
-
-.partners {
-   width:100%;
-   display:flex;
-    
-    .partners1 {
-        width: 25%;
-        border: 1px solid @main-color;
-        margin:auto;
-        border-radius: 25px;
-        text-align: center;
-        p{
-            width: 60%;
-            margin: auto;
-        }
-        .partnerpic {
-            width:40%;
-            height:auto;
-            border-radius: 50%;
-            margin:4%;
-        }
+.top{
+    margin:auto;
+    width:50%;
+    h2{
+        font-family: @accent-font2;
+    }
+   p {
+       font-family: @main-font;
     }
 }
+// .partners {
+//    width:100%;
+    .partners-container{ 
+        display:flex;
+        
+        .partners1, .partners2, .partners3 {
+            width: 25%;
+            border: 1px solid @main-color;
+            margin:auto;
+            border-radius: 25px;
+            text-align: center;}
+
+            p{
+                width: 60%;
+                margin: auto;
+            }
+            .partnerpic {
+                width:40%;
+                height:auto;
+                border-radius: 50%;
+                margin:4%;
+            }
+        }
