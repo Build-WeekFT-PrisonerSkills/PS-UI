@@ -1,0 +1,696 @@
+// Regular CSS
+
+#slider {
+    overflow: hidden;
+    margin-top:-10rem; 
+ }
+ 
+ #slider figure {
+    position: relative;
+    width: 900%;
+    margin: 0;
+    left:0;
+    top:0;
+    animation: 25s slider infinite;
+ }
+ 
+ #slider figure img {
+   
+       width: 11.11%;
+       float:left;
+
+    }
+ @keyframes slider {
+    0% {
+       left: 0;
+    }
+    8%{
+       left:0;
+    }
+    13%{
+       left:-100%;
+    }
+    21%{
+    left:-100%;
+    }
+    26%{
+       left:-200%;
+    }
+    34%{
+       left:-200%;
+    }
+    39% {
+       left: -300%;
+    }
+    47%{
+       left:-300%;
+    }
+    52%{
+       left:-400%;
+    }
+    60%{
+    left:-400%;
+    }
+    65%{
+       left:-500%;
+    }
+    73%{
+       left:-500%;
+    }
+    78%{
+       left:-600%;
+    }
+    86%{
+       left:-600%;
+    }
+    91%{
+       left:-700%;
+    }
+    96%{
+       left:-700%;
+    }
+    100%{
+       left:-800%;
+    }
+ 
+ }
+ 
+ .welcome {
+     margin:2%;
+     h1 { 
+     font-family: @main-font;
+     }
+ }
+ 
+ .purpose {
+     display:flex;
+     padding-right: 2%;
+     padding-left: 2%;
+     width:100%;
+     justify-content: space-between;
+ 
+     .first{
+        padding: 1%;
+        width:80%;
+        border: 1px solid @main-color;
+        border-radius: 8px;
+        margin: 3%;
+       }
+ 
+     .second {
+       padding: 1%;
+       width:80%;
+       border: 1px solid @main-color;
+       border-radius: 8px;
+       margin: 3%;
+       }
+    }
+ 
+
+    
+    .testclass {
+      font-size: 4rem;
+      text-align: center;
+      font-family: @accent-font2;
+      margin:3%;
+    }
+    
+    
+    .slider {
+      height: 32rem;
+      width: 100%;
+      display:flex;
+      margin:2%;
+     
+   
+    .testimonial {
+      overflow: hidden;
+      height: 32rem;
+      width:50%;
+      padding:5%;
+      }
+
+      .testslidepix{
+         width:40%;
+         padding:5%;
+         height:auto;
+         // overflow:hidden;
+         
+            .testsliderpix {
+               width:100%;
+               height:auto;
+            }
+        
+      }
+    
+   }
+
+    
+    .slider ul {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    
+    .slider li {
+      width: 100%;
+      height: 32rem;
+      position: absolute;
+      top: -325px;
+      list-style: none;
+    }
+    
+    .slider .quote {
+      font-size: 2rem;
+      font-style: italic;
+      font-family: @main-font;
+    }
+    
+    .slider .source {
+      font-size: 1.5rem;
+      text-align: right;
+      font-family: @main-font;
+    }
+    
+    .slider li.anim1  {
+      animation: cycle 15s linear infinite;
+    }
+    
+    .slider li.anim2 {
+      animation: cycle2 15s linear infinite;
+    }
+    
+    .slider li.anim3  {
+      animation: cycle3 15s linear infinite;
+    }
+    
+    .slider li.anim4 {
+      animation: cycle4 15s linear infinite;
+    }
+    
+    .slider li.anim5 {
+      animation: cycle5 15s linear infinite;
+    }
+    
+    
+    @keyframes cycle {
+      0% {
+        top: 0px;
+      }
+      4% {
+        top: 0px;
+      }
+      16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      50% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      96% {
+        top: -325px;
+        opacity: 0;
+      }
+      100% {
+        top: 0px;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes cycle2 {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      16% {
+        top: -325px;
+        opacity: 0;
+      }
+      20% {
+        top: 0px;
+        opacity: 1;
+      }
+      24% {
+        top: 0px;
+        opacity: 1;
+      }
+      36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle3 {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      36% {
+        top: -325px;
+        opacity: 0;
+      }
+      40% {
+        top: 0px;
+        opacity: 1;
+      }
+      44% {
+        top: 0px;
+        opacity: 1;
+      }
+      56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle4 {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      56% {
+        top: -325px;
+        opacity: 0;
+      }
+      60% {
+        top: 0px;
+        opacity: 1;
+      }
+      64% {
+        top: 0px;
+        opacity: 1;
+      }
+      76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle5 {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      76% {
+        top: -325px;
+        opacity: 0;
+      }
+      80% {
+        top: 0px;
+        opacity: 1;
+      }
+      84% {
+        top: 0px;
+        opacity: 1;
+      }
+      96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+    }
+   
+
+
+   //  pix slider testimonials
+   .slider li.pix1a {
+      animation: cycle1a 15s linear infinite;
+    }
+    .slider li.pix2a {
+      animation: cycle2a 15s linear infinite;
+    }
+    .slider li.pix3a {
+      animation: cycle3a 15s linear infinite;
+    }
+    .slider li.pix4a {
+      animation: cycle4a 15s linear infinite;
+    }
+    .slider li.pix5a {
+      animation: cycle5a 15s linear infinite;
+    }
+    
+    @keyframes cycle1a {
+      0% {
+        top: 0px;
+      }
+      4% {
+        top: 0px;
+      }
+      16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      50% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      96% {
+        top: -325px;
+        opacity: 0;
+      }
+      100% {
+        top: 0px;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes cycle2a {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      16% {
+        top: -325px;
+        opacity: 0;
+      }
+      20% {
+        top: 0px;
+        opacity: 1;
+      }
+      24% {
+        top: 0px;
+        opacity: 1;
+      }
+      36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle3a {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      36% {
+        top: -325px;
+        opacity: 0;
+      }
+      40% {
+        top: 0px;
+        opacity: 1;
+      }
+      44% {
+        top: 0px;
+        opacity: 1;
+      }
+      56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle4a {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      56% {
+        top: -325px;
+        opacity: 0;
+      }
+      60% {
+        top: 0px;
+        opacity: 1;
+      }
+      64% {
+        top: 0px;
+        opacity: 1;
+      }
+      76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+      81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    
+    @keyframes cycle5a {
+      0% {
+        top: -325px;
+        opacity: 0;
+      }
+      76% {
+        top: -325px;
+        opacity: 0;
+      }
+      80% {
+        top: 0px;
+        opacity: 1;
+      }
+      84% {
+        top: 0px;
+        opacity: 1;
+      }
+      96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+      }
+      100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+      }
+    }
+   
+
+    .buttons {
+    
+    display: flex;
+    justify-content: space-around;
+
+   a{
+       width:20%;
+   
+  
+  button {
+    margin:3%;
+    background: #0085D4;
+    border-radius: 15px;
+    border:none;
+    color:@accent-color;
+    font-family: @main-font;
+    width: 100%;
+    height:3rem;
+    font-size:2rem;
+  }
+ }
+}
+
+ .midimg{
+     width:100%;
+     
+}
+
+.content{
+    margin: 5%;
+    background-image: url('/../../../pix/Rectangle-25.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+//  Responsive CSS
+@media(max-width: 500px) {
+    .purpose {
+      width: 100%;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      margin:0 auto;
+    }
+
+
+    .buttons {
+    
+    
+       a{
+           width:40%;
+       
+      
+      button {
+      
+        font-size:1rem;
+      }
+     }
+    }
+
+
+    .ts{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome{
+       width:100%;
+       h1{
+         font-size: 1.5rem;
+       }
+    }
+
+    .testclass {
+       width:80%;
+       margin:auto;
+      font-size: 2rem;
+      }
+       .slider {
+          width:100%;
+          display:flex;
+          flex-direction: column;
+          .testimonial{
+             padding:2%;
+             margin:0;
+             width:100%;
+             height:15rem;
+
+          .quote {
+            font-size: 1rem;
+            margin:0;
+            }
+         }
+      .testslidepix{
+         padding:2%;
+         margin:0;
+         width:50%;
+         height:auto;
+      }
+       }
+
+       
+    }

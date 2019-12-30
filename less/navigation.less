@@ -1,0 +1,56 @@
+nav {
+    // color: @accent-color;
+    // background: @nav-color;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content: center;
+    position: relative;
+    background: @nav-color;
+    height: 8rem;
+    z-index:1;
+
+    .name {
+       width: 30%;
+        font-family: @accent-font;
+        margin-left:1%;
+        color: @accent-color;
+    }
+    .links { 
+       width: 90%;
+       display: flex;
+       justify-content: flex-end;
+        a {
+        margin:3%;
+        font-family: @main-font;
+        font-size: 1.5rem;
+        line-height: 3.1rem;
+        text-decoration: none;
+        color: @accent-color;
+       }
+    }
+ }
+
+
+
+//  Responsive CSS
+
+@media(max-width: 500px) {
+    nav {
+display:flex;
+flex-direction: column;
+height:15rem;
+        .name {
+            justify-content: center;
+            width:100%;
+        }
+
+        .links{
+            display:flex;
+            justify-content: space-evenly;
+            width:100%;
+            a {
+                font-size: .8rem;
+            }
+    }}}

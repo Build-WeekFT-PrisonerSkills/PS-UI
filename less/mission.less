@@ -1,0 +1,153 @@
+// regular CSS
+.mentioned{ 
+   .content();
+    display:flex;
+    height:25rem;
+    width:100%;
+    justify-content: space-between;
+
+    .asmentioned{
+        margin: 3%;
+        text-align: center; 
+        width:20%;
+    }
+    .mentionedimgs{
+       display: flex;
+       height:100%;
+       width:70%;
+
+       .left1{
+        align-self: center;
+        padding-bottom:5%;
+        margin-left: -10%;
+        margin-right: 15%;
+       }
+    .middle1{
+        display:flex;
+        align-self: flex-start;
+        flex-direction: column;
+     
+    
+       
+       .row1a {
+        padding-bottom:2%; 
+        padding-right:5%;
+       }
+       .row1b  {
+        padding-bottom:7%; 
+        padding-top: 7%;
+        }
+        .row1c {
+        margin-left:5%; 
+        }
+    }
+    .right1{
+        align-self: flex-end;
+        margin-left: 10%;
+        justify-content: space-between;
+       .row2{
+        padding-top:9%;
+        padding-bottom:9%;
+          
+       }
+    }
+    }
+}
+.missionheader{
+  width:100%;
+  margin-top:-10rem; 
+  img {
+      width: 100%;
+      height:auto;
+  }
+}
+.top{
+    margin:auto;
+    width:60%;
+    text-align: center;
+    h2{
+    font-family: @accent-font2;
+    }
+   p {
+       font-family: @main-font;
+    }
+}
+
+    .partners-container{ 
+        display:flex;
+        
+        .partners1, .partners2, .partners3 {
+            width: 25%;
+            border: 1px solid @main-color;
+            margin:auto;
+            border-radius: 25px;
+            text-align: center;}
+
+            p{
+                width: 60%;
+                margin: auto;
+            }
+            .partnerpic {
+                width:40%;
+                height:auto;
+                border-radius: 50%;
+                margin:4%;
+            }
+        }
+
+
+        @media(max-width: 500px) {
+            .partners-container{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .partners1, .partners2, .partners3 {
+                    width: 70%;
+                    border: 1px solid @main-color;
+                    margin:auto;
+                    border-radius: 25px;
+                    text-align: center;
+                    margin:1.5%;
+        
+                    p {
+                        width: 60%;
+                        margin: auto;
+                    }
+                    .partnerpic {
+                        width:40%;
+                        height:auto;
+                        border-radius: 50%;
+                        margin:4%;
+                    }
+                }
+            }
+
+            .mentioned{
+                display: flex;
+                flex-direction: column;
+                height:70rem;
+                width:100%;
+                .asmentioned{
+                    margin: auto; 
+                    width: 100%;
+                }
+                .mentionedimgs{
+                    width:100%;
+                    flex-direction: column;
+                    .left1, .middle1, .right1{
+                        margin:auto;
+                        padding:3%;
+                        width:70%;
+                        align-content: center;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .top{
+                width:80%;
+                margin:auto; 
+            }
+        }

@@ -26,7 +26,7 @@ Own a business? Want to do good in the world? Look no further! "Second Chance" i
 Justin Trombley https://github.com/JustinTrombley96 <br>
 
 ### User Interface
-Maggie Price https://github.com/maggieprice <br>
+Maggie Price https://github.com/maggieprice |https://second-chance-maggieprice.netlify.com<br>
 Rick Ahlgren https://github.com/thericktastic <br>
 
 ### Frontend
@@ -37,3 +37,10 @@ Sunil Karki (junior react dev): https://github.com/karkisunil1200 <br>
 ### Backend
 Sean Naleid https://github.com/seanaleid <br>
 Taylor Hunkler https://github.com/taylorhh5 <br>
+
+
+## Maggie's Resources
+# https://www.youtube.com/watch?v=hRyDECs2N8I
+
+## Things Maggie Would Like to Do if There was More Time
+# Input mechanism for testimonials
